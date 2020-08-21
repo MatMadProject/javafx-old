@@ -45,7 +45,6 @@ public void changed(ObservableValue observable, Object oldValue, Object newValue
             else
             {
                 char c = newValue.toString().charAt(newValue.toString().length()-1);
-                System.out.println(c + " = " + Integer.valueOf(c));
                 if(Integer.valueOf(c) < 48 || Integer.valueOf(c) > 57)
                     textField.setText(oldValue.toString());
             }
@@ -54,7 +53,6 @@ public void changed(ObservableValue observable, Object oldValue, Object newValue
         else
         {
             char c = newValue.toString().charAt(newValue.toString().length()-1);
-            System.out.println(c + " = " + Integer.valueOf(c));
             if(Integer.valueOf(c) < 48 || Integer.valueOf(c) > 57)
                 textField.setText(oldValue.toString());
         }
